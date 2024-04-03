@@ -11,27 +11,15 @@
       },
       {
         "id": "95ab3480-5132-4a00-818b-bebf2265c101",
-        "domain": "ss",
+        "domain": "ss.co.il",
         "desktopAds": 2,
         "mobileAds": 30
-      },
-      {
-        "domain": "s",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "db549350-5020-4073-8419-fa086e07388a"
-      },
-      {
-        "domain": "bla.com",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "c3a516fb-daa8-4f36-8800-fa5c272fbaef"
       }
     ]
   },
   {
     "id": "67dd05d0-c7d0-448d-b5f6-1d9b73e36909",
-    "publisher": "shay",
+    "publisher": "publisher 2",
     "domains": [
       {
         "id": "1d5283b2-5a03-4721-957a-80579e06f8b8",
@@ -58,16 +46,34 @@
     "publisher": "publisher 3",
     "domains": [
       {
-        "domain": "gg",
+        "domain": "what.co.il",
         "desktopAds": 0,
         "mobileAds": 0,
         "id": "88ad684f-32a9-4e6a-9604-272b7290729e"
       },
       {
-        "domain": "d",
+        "domain": "some.com",
         "desktopAds": 0,
         "mobileAds": 0,
         "id": "0f738ade-bba8-4134-995b-adb4ea4a70ea"
+      }
+    ]
+  },
+  {
+    "id": "52d5670c-3b32-40bb-94d1-722c13ebe39c",
+    "publisher": "publisher 4",
+    "domains": [
+      {
+        "domain": "what.com",
+        "desktopAds": 0,
+        "mobileAds": 0,
+        "id": "8191cead-4314-4b72-b76b-419933550b54"
+      },
+      {
+        "domain": "bla.com",
+        "desktopAds": 0,
+        "mobileAds": 0,
+        "id": "6aac4dd6-cde4-4f7b-813e-8efe7148c667"
       }
     ]
   }

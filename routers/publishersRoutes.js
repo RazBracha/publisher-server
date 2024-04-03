@@ -39,7 +39,6 @@ router.post('/publishers/:publisher/domains', async (req, res) => {
             res.status(404).send('Publisher not found');
         }
     } catch (error) {
-        console.error('Error while checking domain existence:', error);
         res.status(500).send('Internal server error');
     }
 });
@@ -50,7 +49,7 @@ router.put('/publishers/:publisher/domains/:domain', async (req, res) => {
     const updatedData = req.body;
 
     try {
-        // Check if domain name already exists excluding the current domain being updated
+        // Check if domain name already exists
         const publisherName = await publisherController.domainExists(updatedData.domain);
         if (publisherName) {
             res.status(400).send(`Domain name already exists for publisher "${publisherName}"`);
@@ -65,7 +64,6 @@ router.put('/publishers/:publisher/domains/:domain', async (req, res) => {
             res.status(404).send('Publisher or domain not found');
         }
     } catch (error) {
-        console.error('Error while checking domain existence:', error);
         res.status(500).send('Internal server error');
     }
 });
