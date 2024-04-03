@@ -5,7 +5,8 @@ const dataFilePath = path.resolve('./DB', 'data.json');
 
 function getData() {
     const rawData = fs.readFileSync(dataFilePath);
-    return JSON.parse(rawData);
+    const json = JSON.parse(rawData)
+    return json;
 }
 
 function setData(data) {
@@ -46,7 +47,7 @@ function updateDomain(publisherId, domainId, updatedData) {
     const data = getData();
     const publisherIndex = data.findIndex(p => p.id === publisherId);
     if (publisherIndex != -1) {
-        const domainIndex = data[publisherIndex].findIndex(d => d.id === domainId);
+        const domainIndex = data[publisherIndex].domains.findIndex(d => d.id === domainId);
         if (domainIndex != -1) {
             data[publisherIndex].domains[domainIndex] = { ...data[publisherIndex].domains[domainIndex], ...updatedData };
             setData(data);
@@ -70,6 +71,14 @@ function deleteDomain(publisherId, domainId) {
     return false; // Publisher or domain not found
 }
 
+async function domainExists(domainName) {
+    return new Promise((resolve, reject) => {
+        const domains = getAllDomains();
+        const domainExists = domains.some(domain => domain.domain === domainName);
+        resolve(domainExists);
+    });
+}
+
 module.exports = {
     getAllPublishers,
     getAllDomains,
@@ -77,4 +86,5 @@ module.exports = {
     insertDomain: addDomain,
     updateDomain,
     deleteDomain,
+    domainExists,
 };

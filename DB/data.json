@@ -5,13 +5,13 @@
     "domains": [
       {
         "id": "a4118361-6195-4d87-a3ea-f8e4e5d8913e",
-        "domain": "bla.com",
+        "domain": "bla.comm",
         "desktopAds": 5,
         "mobileAds": 3
       },
       {
         "id": "95ab3480-5132-4a00-818b-bebf2265c101",
-        "domain": "bla1.com",
+        "domain": "ss",
         "desktopAds": 2,
         "mobileAds": 30
       },
@@ -20,6 +20,24 @@
         "desktopAds": 0,
         "mobileAds": 0,
         "id": "db549350-5020-4073-8419-fa086e07388a"
+      },
+      {
+        "domain": "bla.com",
+        "desktopAds": 0,
+        "mobileAds": 0,
+        "id": "c3a516fb-daa8-4f36-8800-fa5c272fbaef"
+      },
+      {
+        "domain": "raz",
+        "desktopAds": 0,
+        "mobileAds": 0,
+        "id": "d1dfc359-f788-4d45-9888-c5bf9a4f4e93"
+      },
+      {
+        "domain": "raz2",
+        "desktopAds": 0,
+        "mobileAds": 0,
+        "id": "f1a7b266-1614-41d7-bc9c-13806b369320"
       }
     ]
   },
@@ -44,18 +62,6 @@
         "domain": "blashala.com",
         "desktopAds": 150,
         "mobileAds": 130
-      },
-      {
-        "id": "bc2db751-b199-4665-8f6d-04c12cd11ca6",
-        "domain": "blashala.com",
-        "desktopAds": 80,
-        "mobileAds": 130
-      },
-      {
-        "id": "442de6a2-5f9b-4562-9d34-df4dd7cdc284",
-        "domain": ".com",
-        "desktopAds": 80,
-        "mobileAds": 1300
       }
     ]
   },
@@ -74,19 +80,12 @@
         "desktopAds": 0,
         "mobileAds": 0,
         "id": "0f738ade-bba8-4134-995b-adb4ea4a70ea"
-      },
-      {
-        "domain": "d",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "0f738ade-bba8-4134-995b-adb4ea4a70ea"
-      },
-      {
-        "domain": "ss",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "ba9a25f7-1fd5-46b1-a6f4-c60e1647105c"
       }
     ]
+  },
+  {
+    "id": "53414529-d43a-4de7-99f3-715045b62264",
+    "publisher": "publisher 4",
+    "domains": []
   }
 ]
