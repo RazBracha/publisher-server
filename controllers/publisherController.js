@@ -73,9 +73,16 @@ function deleteDomain(publisherId, domainId) {
 
 async function domainExists(domainName) {
     return new Promise((resolve, reject) => {
-        const domains = getAllDomains();
-        const domainExists = domains.some(domain => domain.domain === domainName);
-        resolve(domainExists);
+        const data = getData();
+        for (const publisher of data) {
+            for (const existingDomain of publisher.domains) {
+                if (existingDomain.domain === domainName) {
+                    resolve(publisher.publisher);
+                    return;
+                }
+            }
+        }
+        resolve(null); // Domain not found
     });
 }
 

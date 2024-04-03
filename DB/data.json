@@ -26,18 +26,6 @@
         "desktopAds": 0,
         "mobileAds": 0,
         "id": "c3a516fb-daa8-4f36-8800-fa5c272fbaef"
-      },
-      {
-        "domain": "raz",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "d1dfc359-f788-4d45-9888-c5bf9a4f4e93"
-      },
-      {
-        "domain": "raz2",
-        "desktopAds": 0,
-        "mobileAds": 0,
-        "id": "f1a7b266-1614-41d7-bc9c-13806b369320"
       }
     ]
   },
@@ -82,10 +70,5 @@
         "id": "0f738ade-bba8-4134-995b-adb4ea4a70ea"
       }
     ]
-  },
-  {
-    "id": "53414529-d43a-4de7-99f3-715045b62264",
-    "publisher": "publisher 4",
-    "domains": []
   }
 ]
